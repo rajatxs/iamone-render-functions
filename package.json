@@ -8,9 +8,6 @@
     "iamone-functions",
     "iamone-render-functions"
   ],
-  "scripts": {
-    "dev": "vercel dev"
-  },
   "author": {
     "name": "Rajat Sharma",
     "email": "rxx175@gmail.com",
