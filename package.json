@@ -1,7 +1,22 @@
 {
   "name": "iamone-render-functions",
+  "description": "Render serverless functions for iamone.link",
   "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "iamone",
+    "iamone-functions",
+    "iamone-render-functions"
+  ],
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "author": {
+    "name": "Rajat Sharma",
+    "email": "rxx175@gmail.com",
+    "url": "https://github.com/rajatxs"
+  },
+  "repository": "https://github.com/rajatxs/iamone-render-functions.git",
   "dependencies": {
     "@rxpm/vsfm": "^1.0.2",
     "@vercel/node": "^1.13.0",
