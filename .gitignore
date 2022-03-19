@@ -1,0 +1,9 @@
+node_modules/
+temp/
+.vercel/
+.cache/
+
+.env
+.env.production
+.env.development
+.vercel

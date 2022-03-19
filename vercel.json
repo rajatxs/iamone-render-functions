@@ -1,0 +1,17 @@
+{
+   "public": true,
+   "rewrites": [
+      {
+         "source": "/x/social-platforms",
+         "destination": "/api/social-platforms"
+      },
+      {
+         "source": "/x/themes",
+         "destination": "/api/themes"
+      },
+      {
+         "source": "/:username",
+         "destination": "/api/profile"
+      }
+   ]
+}
