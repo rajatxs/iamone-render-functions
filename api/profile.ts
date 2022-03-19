@@ -22,7 +22,6 @@ export default async function(request: VercelRequest, response: VercelResponse) 
 
       source = await prepareTemplateSource(userData)
    } catch (error) {
-      console.log("ERROR", error)
       return response
          .status(500)
          .redirect('/500.html')
