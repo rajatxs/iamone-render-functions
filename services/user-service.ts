@@ -1,5 +1,6 @@
 import * as handlebars from 'handlebars'
-import socialPlatforms from '../data/social-platforms.json'
+import socialPlatforms from '../public/x/social-platforms.json'
+import { ObjectId } from 'mongodb'
 import { mongo } from '../providers/mongo'
 
 /**
@@ -36,8 +37,31 @@ export function getUserDataByUsername(username: string) {
             return reject(error)
          }
 
+         if (!result) {
+            return resolve(null)
+         }
+
          result.social = resolveSocialLinks(result.social || [])
 
+         resolve(result)
+      })
+   })
+}
+
+/**
+ * Returns theme settings by `pageConfig._id`
+ * @param id - Page config id
+ */
+export function getThemeSettingsById(id: string) {
+   return new Promise((resolve, reject) => {
+      const collection = mongo().collection('page_theme')
+      const _id = new ObjectId(id)
+
+      collection.findOne({ _id }, (error, result) => {
+         if (error) {
+            return reject(error)
+         }
+         
          resolve(result)
       })
    })

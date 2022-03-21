@@ -1,13 +1,28 @@
 {
    "public": true,
+   "headers": [
+      {
+         "source": "/x/(.*)",
+         "headers": [
+            {
+               "key": "Access-Control-Allow-Origin",
+               "value": "*"
+            },
+            {
+               "key": "Access-Control-Allow-Methods",
+               "value": "GET, OPTIONS"
+            },
+            {
+               "key": "Access-Control-Allow-Headers",
+               "value": "X-Client-Id, Content-Type"
+            }
+         ]
+      }
+   ],
    "rewrites": [
       {
-         "source": "/x/social-platforms",
-         "destination": "/api/social-platforms"
-      },
-      {
-         "source": "/x/themes",
-         "destination": "/api/themes"
+         "source": "/x/style/:pageConfigId",
+         "destination": "/api/style"
       },
       {
          "source": "/:username",

@@ -2,20 +2,21 @@ import type { TemplateDelegate } from 'handlebars'
 import hbs from '../providers/hbs'
 import { join } from 'path'
 import { readFile } from 'fs'
+import { publicDir } from '../providers/common'
 
 /**
  * Compile theme source
  * @param themeName - Theme name
  * @param customStyles - Custom theme styles
  */
-export async function compileTheme(themeName: string, customStyles: any = {}) {
+export async function compileTheme(themeName: string, customStyles: any = {}): Promise<string> {
    return new Promise(async (resolve, reject) => {
       let themeConfig: any = {}, themeObject: any = {}, delegation: TemplateDelegate<any>
 
-      themeConfig = await import(`../themes/${themeName}.json`)
+      themeConfig = await import(`../public/x/themes/${themeName}.json`)
       themeObject = { ...themeConfig, ...customStyles }
 
-      readFile(join(__dirname, '..', 'templates', 'default.style.hbs'), 'utf8', (error, content) => {
+      readFile(join(publicDir(), 'x', 'templates', 'default.style.hbs'), 'utf8', (error, content) => {
          if (error) {
             return reject(error)
          }
@@ -30,7 +31,7 @@ export function compileLayout(templateName: string, layoutName: string, data: an
    return new Promise(async (resolve, reject) => {
       let delegation: TemplateDelegate<any>
 
-      readFile(join(__dirname, '..', 'templates', `${layoutName}.layout.hbs`), 'utf8', (error, content) => {
+      readFile(join(publicDir(), 'x', 'templates', `${layoutName}.layout.hbs`), 'utf8', (error, content) => {
          if (error) {
             return reject(error)
          }
@@ -53,7 +54,7 @@ export function compileTemplate(templateName: string, data: any = {}): Promise<s
    return new Promise((resolve, reject) => {
       let delegation: TemplateDelegate<any>
 
-      readFile(join(__dirname, '..', 'templates', `${templateName}.hbs`), 'utf8', (error, content) => {
+      readFile(join(publicDir(), 'x', 'templates', `${templateName}.hbs`), 'utf8', (error, content) => {
          if (error) {
             return reject(error)
          }
