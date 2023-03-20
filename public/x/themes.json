@@ -6,27 +6,27 @@
          {
             "key": "light-one",
             "name": "Light One",
-            "thumb": "https://static.iamone.link/images/thumbs/light-one.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/light-one.jpg"
          },
          {
             "key": "dark-one",
             "name": "Dark One",
-            "thumb": "https://static.iamone.link/images/thumbs/dark-one.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/dark-one.jpg"
          },
          {
             "key": "saffron",
             "name": "Saffron",
-            "thumb": "https://static.iamone.link/images/thumbs/saffron.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/saffron.jpg"
          },
          {
             "key": "cherry",
             "name": "Cherry",
-            "thumb": "https://static.iamone.link/images/thumbs/cherry.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/cherry.jpg"
          },
          {
             "key": "abstract-orange",
             "name": "Abstract Orange",
-            "thumb": "https://static.iamone.link/images/thumbs/abstract-orange.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/abstract-orange.jpg"
          }
       ]
    },
@@ -37,17 +37,17 @@
          {
             "key": "gradient-1",
             "name": "Gradient 1",
-            "thumb": "https://static.iamone.link/images/thumbs/gradient-1.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/gradient-1.jpg"
          },
          {
             "key": "gradient-2",
             "name": "Gradient 2",
-            "thumb": "https://static.iamone.link/images/thumbs/gradient-2.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/gradient-2.jpg"
          },
          {
             "key": "gradient-3",
             "name": "Gradient 3",
-            "thumb": "https://static.iamone.link/images/thumbs/gradient-3.jpg"
+            "thumb": "https://rajatxs.github.io/iamone-static/images/thumbs/gradient-3.jpg"
          }
       ]
    }
