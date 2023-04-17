@@ -4,8 +4,8 @@
       "type": "username",
       "name": "iamone",
       "hint": "iamone username",
-      "hostname": "iamone.link",
-      "templateUrl": "https://iamone.link/{{slug}}"
+      "hostname": "iamone.in",
+      "templateUrl": "https://iamone.in/{{slug}}"
    },
    {
       "key": "email",
